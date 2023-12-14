@@ -1,0 +1,19 @@
+{
+  "name": "er-car-javascript",
+  "version": "1.0.0",
+  "author": "Yohei, Isshiki <yohei.isshiki@er.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn g:build && webpack --config webpack.production.js",
+    "build-bats": "yarn g:build-bats && webpack --config webpack.development.js",
+    "start": "yarn g:start && webpack serve --config webpack.development.js"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "webpack": "^5.89.0",
+    "webpack-bundle-analyzer": "^4.7.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.10.0"
+  }
+}
