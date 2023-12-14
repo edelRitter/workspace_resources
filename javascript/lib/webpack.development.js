@@ -52,7 +52,7 @@ const config = {
             loader: 'webpack-ssi-include-loader',
             options: {
               localPath: path.join(__dirname, '/public'),
-              location: 'https://car.er.co.jp/',
+              location: 'https://edelritter.github.io/',
             },
           },
         ],

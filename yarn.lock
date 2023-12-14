@@ -4080,9 +4080,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"er-car-javascript@workspace:javascript/lib":
+"er-javascript@workspace:javascript/lib":
   version: 0.0.0-use.local
-  resolution: "er-car-javascript@workspace:javascript/lib"
+  resolution: "er-javascript@workspace:javascript/lib"
   dependencies:
     css-loader: "npm:^6.7.1"
     webpack: "npm:^5.89.0"

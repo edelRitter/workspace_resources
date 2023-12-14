@@ -7,7 +7,7 @@ const config = {
   mode: 'production',
   output: {
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: 'https://carservice.r10s.jp/',
+    publicPath: 'https://edelritter.github.io/',
     filename: 'js/[name].js',
     clean: true,
   },
