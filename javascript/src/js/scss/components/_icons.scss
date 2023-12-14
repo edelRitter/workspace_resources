@@ -1,0 +1,39 @@
+// icons
+
+$items: (
+  'air',
+  'airconductor',
+  'airfilter',
+  'airgas',
+  'atf',
+  'battery',
+  'brake',
+  'brakepad',
+  'defoil',
+  'fanbelt',
+  'oil',
+  'powerbelt',
+  'radiator',
+  'safety',
+  'spark',
+  'tire',
+  'twelve',
+  'wiper'
+);
+@each $item in $items {
+  .javascript-icon-service-#{$item} {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 0 7px;
+    vertical-align: middle;
+    background: url('/img/maint/my/common/icon_service_#{$item}.svg') no-repeat;
+    background-position: center;
+  }
+}
+
+.javascript-icon-map {
+  width: 18px;
+  height: 18px;
+  background: url('/img/maint/my/common/icon_map.svg') no-repeat;
+}
