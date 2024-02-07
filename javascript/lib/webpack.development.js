@@ -39,20 +39,12 @@ const config = {
               minimize: false,
               sources: {
                 urlFilter: (attribute, value) => {
-                  // for absolute urls (/car/../..)
                   if (value.startsWith('/')) {
                     return false
                   }
                   return true
                 },
               },
-            },
-          },
-          {
-            loader: 'webpack-ssi-include-loader',
-            options: {
-              localPath: path.join(__dirname, '/public'),
-              location: 'https://edelritter.github.io/',
             },
           },
         ],

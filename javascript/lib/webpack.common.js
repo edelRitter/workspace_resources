@@ -6,7 +6,7 @@ const files = glob.sync('public/**/*.html');
 
 const config = {
   entry: {
-    javascript: [path.resolve(__dirname, '../src/js/index.js')],
+    javascript: [path.resolve(__dirname, './src/js/index.js')],
   },
   plugins: [],
   module: {
@@ -20,7 +20,7 @@ const config = {
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '../src/'),
+      '@': path.resolve(__dirname, './src/util'),
     },
     extensions: ['.css', '.scss', '.js', '.json', '.html'],
   },
