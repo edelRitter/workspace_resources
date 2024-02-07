@@ -6,6 +6,17 @@
   small to extra-large is the same with bootstrap's breakpoint
 */
 
+/*
+Samples:
+@media #{$small-only} {
+  // styles for small screens and down
+}
+@media #{$medium-only} {
+  // styles for small screens and down
+}
+...
+*/
+
 $tiniest-only: "only screen and (max-width: 320px)";
 $tiny-only: "only screen and (min-width: 321px) and (max-width: 374px)";
 $xsmall-only: "only screen and (min-width: 375px) and (max-width: 575px)";
@@ -30,28 +41,3 @@ $large-and-up: "only screen and (min-width: 992px)";
 $large-and-down: "only screen and (max-width: 1199px)";
 
 $extra-large-and-up: "only screen and (min-width: 1200px)";
-
-/*
-Samples:
-@media #{$small-only} {
-  // styles for small screens and down
-}
-@media #{$medium-only} {
-  // styles for small screens and down
-}
-@media #{$small-and-down} {
-  // styles for small screens and down
-}
-@media #{$medium-and-up} {
-  // styles for medium screens and larger
-}
-@media #{$medium-and-down} {
-  // styles for medium screens and down
-}
-@media #{$large-and-up} {
-  // styles for large screens and up
-}
-@media #{$extra-large-and-up} {
-  // styles for extra large screens and up
-}
-*/

@@ -15,7 +15,6 @@
   },
   "scripts": {
     "g:build": "cd $INIT_CWD && cross-env NODE_ENV=production",
-    "g:build-bats": "cd $INIT_CWD && cross-env NODE_ENV=bats",
     "g:start": "cd $INIT_CWD && cross-env NODE_ENV=development"
   },
   "devDependencies": {
