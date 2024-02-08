@@ -15,7 +15,9 @@
   },
   "scripts": {
     "g:build": "cd $INIT_CWD && cross-env NODE_ENV=production",
-    "g:start": "cd $INIT_CWD && cross-env NODE_ENV=development"
+    "g:start": "cd $INIT_CWD && cross-env NODE_ENV=development",
+    "lint": "eslint ./javascript/lib/src/**/**.{js,jsx}",
+    "lint-fix": "eslint ./javascript/lib/src/**/**.{js,jsx} --fix && prettier ./javascript/lib/src/**/**.scss --write"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
@@ -25,9 +27,12 @@
     "copy-webpack-plugin": "^11.0.0",
     "core-js": "^3.26.0",
     "cross-env": "^7.0.3",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.21.1",
     "glob": "^7.1.6",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
+    "prettier": "^3.2.5",
     "sass": "^1.69.5",
     "sass-loader": "^13.1.0",
     "style-loader": "^3.3.1",
@@ -44,17 +49,5 @@
     "bootstrap": "^4.6.0",
     "dayjs": "^1.10.4",
     "swiper": "^11.0.4"
-  },
-  "lint-staged": {
-    "*.{js,vue}": [
-      "prettier --write --cache",
-      "eslint --fix --cache"
-    ],
-    "*.{html,json}": [
-      "prettier --write --cache"
-    ],
-    "*.scss": [
-      "prettier --write --cache"
-    ]
   }
 }
